@@ -1,2 +1,2 @@
-# js-assignment
+# js-assignment day 2
 Letsupgrade javascript Assignment
