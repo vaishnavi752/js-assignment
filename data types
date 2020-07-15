@@ -1,0 +1,47 @@
+data types describe the different types or kinds of data that we’re gonna be working with and storing in variables. 
+
+In Javascript, there are five basic, or primitive, types of data. The five most basic types of data are strings, numbers, booleans, undefined, and null. We refer to these as primitive data types. A single variable can only store a single type of data. That means it’s important for you to learn to store the data correctly.
+
+The computer is gonna identify what type of data you’re working with based off of the syntax, or the way that you write the code. It’s important that you remember and practice these differences, otherwise, data could get stored in an improper format and bite you later. 
+
+Overview of the Five Most Basic Types of Data
+Let’s go through our brief overview of each type of data and what it can be used for. Strings are collections of alphanumeric characters and symbols. This is how we’re gonna store letters and words. Things like addresses. Numbers are just what they sound like. They’re numbers, including both integers and decimals. Computers will often use numbers to perform mathematical operations, but they may also just be a number like a count of how many flavors of ice cream a particular store has.
+
+Booleans can only have two values. True and false. They represent all data that only has two states, like a light switch. On or off. The undefined data type means that the variable has been created, but has never been given a value. It is nothing because no one has ever bothered to tell it what value it should be. Null is similar to undefined, except it has to be set intentionally. It also means empty or nothing, but it’s that way because a developer told it it was empty or nothing. 
+
+Two Other Common Data Types: Objects and Arrays 
+Two other common data types that we’ll talk about later are objects and arrays. An object or array are collections, a way to group together multiple points of data into a single bundle that we can pass around using access.
+
+These are only some of the data types that you will be using. We’ll review exactly how to write the syntax for each one in the future, as well as why you might want to use one over another. For now, just remember that the computer thinks about data and information differently. Its got different buckets for the different types. We need to learn those types and when to use the right ones in the right scenarios.
+
+Strings, Numbers, and Booleans – the Most Simple and Common Data Types
+Some of the most simple and common types that we’re gonna encounter are first, strings and then numbers, and then booleans.
+
+Strings:
+
+A string is a collection of alphanumeric characters. I start a string by typing double quotes, single quotes, or the backtick character. Double quote and single quote behave identically, and the backtick character comes with some extra functionality.
+
+Let’s stick with the basics. We got our double quote string here. I typed the word, “string”, but the quotes is what I need to actually say that I am creating a string. Then, inside of the quote, I can put whatever I want. “The dog went on a walk to 7-11”. You’ll notice that all remains the exact same color because it’s within the quote marks. If I were to copy this and place it outside quote marks, you’ll notice that the coloring in my editor is very differently. That’s because this default blue color in my current scheme is trying to look for a variable with this name. It’s not finding it. This doesn’t make any sense to it. It doesn’t know it’s trying to do 7-11 and some other weird things in here.
+
+But when we wrap a value in a string, in quotes, it creates a string at which point we can put any valid alphanumeric character we would like inside the string. We can add a whole bunch of weird special characters, letters, and numbers. That’s all valid inside of a string. The only thing that’s not valid is another quote mark because that ends the string and now I have a quote mark sitting out here all by itself without having a match.
+
+We need to be careful about using quote marks inside of strings. The same kind of quote mark. We can do the same thing inside of here, the same rules apply. Anything goes inside of it, and once again, copy and paste, the same thing applies inside of backticks. One of the great things that backticks support that other strings don’t is, let’s say that I turn this into a really, really, really long sentence, and decided I don’t want that to go off the screen. I’m going to hit enter. I have to go to a new line. We have our coloring problem, it’s reappeared to indicate that this isn’t valid. It’s, again, trying to do JavaScript instead of just treating it like a string.
+
+But if I were to, once again, copy that and paste it inside this backtick, with a backtick we can hit enter, and it works. Backticks will respect the enter key and allow us to split a string into multiple lines of code. When in doubt, it’s really common for developers to be using the backtick for their default screen notice. So go ahead and do that, but as you’re reading tutorials, blogs, articles, other content, you’ll often see the double quote and the single quote. Remember, it’s a string in the same way that the backtick is. It’s holding alphanumeric characters, letters, numbers, and special symbols. This is an important part of human communication. We write sentences, we message each other on slack and all these other things, so we need a way to store that information that basically leaves it intact the way that the user gave it to us, and that’s where strings
+come into play.
+
+Numbers :
+
+Numbers. Let’s talk about numbers. Numbers are as straightforward as they sound. Numbers are for numbers. I can’t put a letter on here. It’s no longer a number, and the coloring gets funky. It’s no longer green. But I can make this number be as long as I want it. I cannot add a comma, but I can add a decimal point. So numbers are any integer or decimal number created in the language, and they’re used for money, age, etc. the same kinds of things that we use money for here in real life.
+
+Booleans
+Booleans have two values. True and false. When we create a boolean, we’re simply saying it’s true or it’s false. It’s like that on/off switch example that we talked about. It’s all there is to them right now. We’re gonna talk into other aspects of playing into these variables in another time.
+
+I’m gonna go ahead and label these for those of you that are taking a minute to think. These were strings. This is number, and this is a boolean, also called a bool, from time to time. All right. Next up, we’re gonna talk about null and undefined.
+
+Null and Undefined 
+As we mentioned in the conceptual videos, null and undefined stand for empty. That means they have no value assigned to them. The difference is undefined exists when we haven’t given a value. If I were to go turn var rhyme, and do the good, old classic, “Roses are red and violets are blue.” This is a string. I’m going to … I told you to use backticks, so I’m gonna go ahead and use backticks. See, if I can do it, you can do it. If you just used the wrong quote, that’s okay. Just remember to fix it. “Roses are read and violets are blue.” Put that on a variable.
+
+But if I didn’t give it this value rhyme, rhyme now has a value of undefined. Rhyme was created, storage has been allocated for us to remember data, but because nothing was put in there, that is undefined. I’m gonna go ahead and re-grab this guy, this whole sentence, put this back, and move this sentence up here, fix my syntax. There we go. I got a copy of my rhyme here. I’ll call this rhyme1 and rhyme2. Here, I have a value, and maybe as a developer for reasons later on, I decide I want that rhyme gone. I can set it to null. I’ve done this as a developer on purpose, using variable assignment with the equal sign.
+
+That’s about all there is to null and undefined. One of the big things to remember is that if you never gave a variable a value, it is undefined. And anytime you try to access a variable name that has not been created, for example, I could look for rhyme3. This does not exist because I haven’t created it. JavaScript is just gonna assume that it’s undefined. If I were to try to interact with it, it will give me the value of undefined. A lot of times I can break my code, so we don’t want to do that, but it’s important to understand that JavaScript default behavior is everything is undefined until it has been assigned a value. Once something is assigned a value, we can blank it out by passing in null.
